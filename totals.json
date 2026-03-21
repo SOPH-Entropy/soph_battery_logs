@@ -1,16 +1,27 @@
 {
   "version": "V3",
   "generator": "soph_v3",
-  "last_updated": "2026-03-21T23:34:50.136789+00:00",
+  "last_updated": "2026-03-21T23:42:19.604502+00:00",
   "totals": {
-    "total_runs": 13,
-    "total_tests": 294,
-    "pass": 294,
+    "total_runs": 14,
+    "total_tests": 489,
+    "pass": 489,
     "suspect": 0,
     "fail": 0,
     "pct_clean": 100.0
   },
   "batteries": {
+    "practrand": {
+      "total_runs": 1,
+      "total_tests": 195,
+      "pass": 195,
+      "suspect": 0,
+      "fail": 0,
+      "pct_clean": 100.0,
+      "runs_pass": 1,
+      "runs_warn": 0,
+      "runs_fail": 0
+    },
     "dieharder": {
       "total_runs": 1,
       "total_tests": 114,
