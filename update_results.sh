@@ -70,7 +70,7 @@ for suite in suites:
 
 # ── Print ──
 now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-print(f"SOPH V2 Battery Test Results — {now}")
+print(f"SOPH V3 Battery Test Results — {now}")
 print("=" * 70)
 
 for suite in suites:
@@ -251,4 +251,31 @@ with open(results_path, "w") as f:
     json.dump(summary, f, indent=2)
     f.write("\n")
 print(f"[update] results.json updated ({tr['total_runs']} runs, {tr['total_tests']} tests)")
+
+# Also write totals.json (compact summary for quick consumption)
+totals_path = os.path.join(base, "totals.json")
+with open(totals_path, "w") as f:
+    json.dump({
+        "version": "V3",
+        "generator": "soph_v3",
+        "last_updated": summary["last_updated"],
+        "totals": summary["totals"],
+        "batteries": {
+            suite: {
+                "total_runs": b["total_runs"],
+                "total_tests": b["total_tests"],
+                "pass": b["pass"],
+                "suspect": b["suspect"],
+                "fail": b["fail"],
+                "pct_clean": b["pct_clean"],
+                "runs_pass": b["runs_pass"],
+                "runs_warn": b["runs_warn"],
+                "runs_fail": b["runs_fail"],
+            }
+            for suite, b in summary["batteries"].items()
+            if b["total_runs"] > 0
+        },
+    }, f, indent=2)
+    f.write("\n")
+print(f"[update] totals.json updated")
 JSONEOF
