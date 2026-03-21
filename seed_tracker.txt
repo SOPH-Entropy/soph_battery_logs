@@ -1,13 +1,12 @@
 SOPH V2 — Seed Usage Tracker
-Updated: 2026-03-21 23:15 UTC
+Updated: 2026-03-21 23:34 UTC
 ================================================================
 
 SUMMARY BY CATEGORY
 ----------------------------------------------------------------------
 Category              Seeds  Tests   Pass   Warn   Fail
 -------------------- ------ ------ ------ ------ ------
-low-entropy               9      9      9      0      0
-short                     1     20     20      0      0
+low-entropy               9     10     10      0      0
 
 ======================================================================
   SMALLCRUSH — 12 seeds tested
@@ -28,28 +27,9 @@ low-entropy      ff                                                             
 low-entropy      ffff                                                                     PASS
 
 ======================================================================
-  PRACTRAND — 1 seeds tested
+  DIEHARDER — 1 seeds tested
 ======================================================================
 Category         Seed                                                                  Verdict
 ---------------- -------------------------------------------------------------------- --------
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
-short            unknown                                                                  PASS
+low-entropy      00                                                                       PASS
 
