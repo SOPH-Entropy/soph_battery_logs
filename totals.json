@@ -1,24 +1,24 @@
 {
   "version": "V3",
   "generator": "soph_v3",
-  "last_updated": "2026-03-21T23:11:56.394682+00:00",
+  "last_updated": "2026-03-21T23:12:02.806546+00:00",
   "totals": {
-    "total_runs": 8,
-    "total_tests": 120,
-    "pass": 120,
+    "total_runs": 9,
+    "total_tests": 135,
+    "pass": 135,
     "suspect": 0,
     "fail": 0,
     "pct_clean": 100.0
   },
   "batteries": {
     "smallcrush": {
-      "total_runs": 8,
-      "total_tests": 120,
-      "pass": 120,
+      "total_runs": 9,
+      "total_tests": 135,
+      "pass": 135,
       "suspect": 0,
       "fail": 0,
       "pct_clean": 100.0,
-      "runs_pass": 8,
+      "runs_pass": 9,
       "runs_warn": 0,
       "runs_fail": 0
     }

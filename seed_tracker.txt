@@ -1,15 +1,15 @@
 SOPH V2 — Seed Usage Tracker
-Updated: 2026-03-21 23:11 UTC
+Updated: 2026-03-21 23:12 UTC
 ================================================================
 
 SUMMARY BY CATEGORY
 ----------------------------------------------------------------------
 Category              Seeds  Tests   Pass   Warn   Fail
 -------------------- ------ ------ ------ ------ ------
-low-entropy               8      8      8      0      0
+low-entropy               9      9      9      0      0
 
 ======================================================================
-  SMALLCRUSH — 8 seeds tested
+  SMALLCRUSH — 9 seeds tested
 ======================================================================
 Category         Seed                                                                  Verdict
 ---------------- -------------------------------------------------------------------- --------
@@ -21,4 +21,5 @@ low-entropy      03                                                             
 low-entropy      04                                                                       PASS
 low-entropy      05                                                                       PASS
 low-entropy      ff                                                                       PASS
+low-entropy      ffff                                                                     PASS
 
