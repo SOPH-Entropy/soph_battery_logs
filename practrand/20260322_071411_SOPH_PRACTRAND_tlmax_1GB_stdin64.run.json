@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "suite": "practrand",
+  "timestamp_utc": "2026-03-21T23:14:16.595839+00:00",
+  "artifact": {
+    "file": "usedLogs/20260322_071411_SOPH_PRACTRAND_tlmax_1GB_stdin64.log",
+    "sha256": "245d7761ebec44f95252c17e046c49122f6369850684d6727e7b977e2d1c28eb",
+    "size_bytes": 2063
+  },
+  "generator": {
+    "name": "generator",
+    "command": "$HOME/Desktop/SOPH_ALGO/bin/soph_v3 --gen --seed-hex 02 --bytes 0",
+    "binary": "$HOME/Desktop/SOPH_ALGO/bin/soph_v3",
+    "binary_sha256": "f7080fdff5aa566b4bb0110b0a5aa2fed59152dc9cf535019bc9ebe7176419d2",
+    "seed_hex": null
+  },
+  "battery": {
+    "suite": "practrand",
+    "command": "$LEGACY_SOPH_C/PractRand-pre0.95/RNG_test stdin64 -tlmin 128KB -tlmax 1GB",
+    "tool": "$LEGACY_SOPH_C/PractRand-pre0.95/RNG_test",
+    "tool_sha256": "4bc1b5880ce046438e3ccb1d730f9a3f581df199829d429774fd8c719f76f655",
+    "stream": "stdin64",
+    "folding": null,
+    "expanded_test_set": null
+  },
+  "runner": {
+    "file": "run_battery.py",
+    "sha256": "b6100536b078ebe177d8a1de6f9775155cb90e900964f950eca383c96506522d"
+  },
+  "source_commit": null,
+  "result": {
+    "verdict": "PASS",
+    "total_tests": 246,
+    "pass": 246,
+    "anomalies": 0,
+    "fail": 0,
+    "pct_clean": 100.0,
+    "tlmax": "1GB"
+  },
+  "signature": {
+    "scheme": "openssl-dgst-sha256",
+    "public_key": "keys/signing-pub.pem",
+    "signature_file": "records/20260322_071411_SOPH_PRACTRAND_tlmax_1GB_stdin64.run.json.sig"
+  }
+}
