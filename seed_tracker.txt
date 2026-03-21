@@ -9,10 +9,11 @@ Category              Seeds  Tests   Pass   Warn   Fail
 low-entropy               9      9      9      0      0
 
 ======================================================================
-  SMALLCRUSH — 11 seeds tested
+  SMALLCRUSH — 12 seeds tested
 ======================================================================
 Category         Seed                                                                  Verdict
 ---------------- -------------------------------------------------------------------- --------
+64-bit           0123456789abcdef                                                         PASS
 64-bit           abababababababab                                                         PASS
 64-bit           deaddeaddeaddead                                                         PASS
 low-entropy      00                                                                       PASS

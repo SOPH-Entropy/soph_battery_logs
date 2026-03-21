@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-21T23:12:15.201345+00:00",
+  "last_updated": "2026-03-21T23:12:21.480284+00:00",
   "batteries": {
     "practrand": {
       "expected_run_pass_rate": "~100%",
@@ -54,13 +54,13 @@
       "expected_note": "15 tests. At alpha=0.001, P(false positive per test) \u2248 0.2%. P(all 15 pass) \u2248 97%. Occasional single suspect is normal.",
       "sub_test_count": 15,
       "warn_threshold": "p < 0.001 or p > 0.999",
-      "total_runs": 11,
-      "total_tests": 165,
-      "pass": 165,
+      "total_runs": 12,
+      "total_tests": 180,
+      "pass": 180,
       "suspect": 0,
       "fail": 0,
       "pct_clean": 100.0,
-      "runs_pass": 11,
+      "runs_pass": 12,
       "runs_warn": 0,
       "runs_fail": 0,
       "runs": [
@@ -206,6 +206,19 @@
           "pct_clean": 100.0,
           "tlmax": null,
           "reruns": null
+        },
+        {
+          "file": "20260322_071218_SOPH_SMALLCRUSH_seed_0123456789abcdef.run.json",
+          "date": "2026-03-21T23:12:21.380724+00:00",
+          "seed": "0123456789abcdef",
+          "verdict": "PASS",
+          "total_tests": 15,
+          "pass": 15,
+          "suspect": 0,
+          "fail": 0,
+          "pct_clean": 100.0,
+          "tlmax": null,
+          "reruns": null
         }
       ]
     },
@@ -243,9 +256,9 @@
     }
   },
   "totals": {
-    "total_runs": 11,
-    "total_tests": 165,
-    "pass": 165,
+    "total_runs": 12,
+    "total_tests": 180,
+    "pass": 180,
     "suspect": 0,
     "fail": 0,
     "pct_clean": 100.0
