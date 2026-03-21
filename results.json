@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-03-21T23:13:30.937969+00:00",
+  "last_updated": "2026-03-21T23:13:39.855930+00:00",
   "batteries": {
     "practrand": {
       "expected_run_pass_rate": "~100%",
       "expected_note": "Binary \u2014 PASS or FAIL at each data size. A true RNG should pass to 32 TiB+.",
       "sub_test_count": "~1000+ (cumulative across sizes)",
       "warn_threshold": "p < 3.2e-6 (suspect)",
-      "total_runs": 7,
-      "total_tests": 1302,
-      "pass": 1302,
+      "total_runs": 8,
+      "total_tests": 1548,
+      "pass": 1548,
       "suspect": 0,
       "fail": 0,
       "pct_clean": 100.0,
-      "runs_pass": 7,
+      "runs_pass": 8,
       "runs_warn": 0,
       "runs_fail": 0,
       "runs": [
@@ -101,6 +101,19 @@
           "verdict": "PASS",
           "total_tests": 194,
           "pass": 194,
+          "suspect": 0,
+          "fail": 0,
+          "pct_clean": 100.0,
+          "tlmax": "1GB",
+          "reruns": null
+        },
+        {
+          "file": "20260322_071334_SOPH_PRACTRAND_tlmax_1GB_stdin64.run.json",
+          "date": "2026-03-21T23:13:39.756214+00:00",
+          "seed": "01",
+          "verdict": "PASS",
+          "total_tests": 246,
+          "pass": 246,
           "suspect": 0,
           "fail": 0,
           "pct_clean": 100.0,
@@ -348,9 +361,9 @@
     }
   },
   "totals": {
-    "total_runs": 19,
-    "total_tests": 1482,
-    "pass": 1482,
+    "total_runs": 20,
+    "total_tests": 1728,
+    "pass": 1728,
     "suspect": 0,
     "fail": 0,
     "pct_clean": 100.0
