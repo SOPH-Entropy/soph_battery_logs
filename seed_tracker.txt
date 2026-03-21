@@ -6,14 +6,15 @@ SUMMARY BY CATEGORY
 ----------------------------------------------------------------------
 Category              Seeds  Tests   Pass   Warn   Fail
 -------------------- ------ ------ ------ ------ ------
-low-entropy               6      6      6      0      0
+low-entropy               7      7      7      0      0
 
 ======================================================================
-  SMALLCRUSH — 6 seeds tested
+  SMALLCRUSH — 7 seeds tested
 ======================================================================
 Category         Seed                                                                  Verdict
 ---------------- -------------------------------------------------------------------- --------
 low-entropy      00                                                                       PASS
+low-entropy      0000                                                                     PASS
 low-entropy      01                                                                       PASS
 low-entropy      02                                                                       PASS
 low-entropy      03                                                                       PASS
