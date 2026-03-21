@@ -1,0 +1,6 @@
+{
+  "version": "V3",
+  "generator": "soph_v3",
+  "totals": {"total_runs": 0, "total_tests": 0, "pass": 0, "suspect": 0, "fail": 0},
+  "batteries": {}
+}

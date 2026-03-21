@@ -1,0 +1,66 @@
+SOPH V2 — Seed Usage Tracker
+Updated: 2026-03-21 23:07 UTC
+================================================================
+
+SUMMARY BY CATEGORY
+----------------------------------------------------------------------
+Category              Seeds  Tests   Pass   Warn   Fail
+-------------------- ------ ------ ------ ------ ------
+low-entropy               9     18     17      1      0
+short                     1     16      7      0      9
+
+======================================================================
+  SMALLCRUSH — 12 seeds tested
+======================================================================
+Category         Seed                                                                  Verdict
+---------------- -------------------------------------------------------------------- --------
+64-bit           0123456789abcdef                                                         PASS
+64-bit           abababababababab                                                         PASS
+64-bit           deaddeaddeaddead                                                         PASS
+low-entropy      00                                                                       PASS
+low-entropy      0000                                                                     PASS
+low-entropy      01                                                                       PASS
+low-entropy      02                                                                       PASS
+low-entropy      03                                                                       PASS
+low-entropy      04                                                                       PASS
+low-entropy      05                                                                       PASS
+low-entropy      ff                                                                       PASS
+low-entropy      ffff                                                                     PASS
+
+======================================================================
+  NIST — 9 seeds tested
+======================================================================
+Category         Seed                                                                  Verdict
+---------------- -------------------------------------------------------------------- --------
+low-entropy      00                                                                       PASS
+low-entropy      0000                                                                     WARN
+low-entropy      01                                                                       PASS
+low-entropy      02                                                                       PASS
+low-entropy      03                                                                       PASS
+low-entropy      04                                                                       PASS
+low-entropy      05                                                                       PASS
+low-entropy      ff                                                                       PASS
+low-entropy      ffff                                                                     PASS
+
+======================================================================
+  PRACTRAND — 1 seeds tested
+======================================================================
+Category         Seed                                                                  Verdict
+---------------- -------------------------------------------------------------------- --------
+short            unknown                                                                  FAIL
+short            unknown                                                                  FAIL
+short            unknown                                                                  FAIL
+short            unknown                                                                  FAIL
+short            unknown                                                                  FAIL
+short            unknown                                                                  FAIL
+short            unknown                                                                  FAIL
+short            unknown                                                                  PASS
+short            unknown                                                                  PASS
+short            unknown                                                                  PASS
+short            unknown                                                                  FAIL
+short            unknown                                                                  FAIL
+short            unknown                                                                  PASS
+short            unknown                                                                  PASS
+short            unknown                                                                  PASS
+short            unknown                                                                  PASS
+
