@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T02:41:43.735377+00:00",
+  "last_updated": "2026-03-22T02:43:00.305776+00:00",
   "batteries": {
     "practrand": {
       "expected_run_pass_rate": "~100%",
@@ -115,13 +115,13 @@
       "expected_note": "188 sub-tests (including 148 NonOverlappingTemplate variants). Each at alpha=0.01. P(any WARN) \u2248 77% just from NonOverlappingTemplate alone. 1-3 WARNs per run is expected for a perfect RNG. 0 FAILs expected.",
       "sub_test_count": 188,
       "warn_threshold": "proportion < 0.96 or p-value < 0.0001",
-      "total_runs": 6,
-      "total_tests": 93,
-      "pass": 92,
+      "total_runs": 7,
+      "total_tests": 108,
+      "pass": 107,
       "suspect": 1,
       "fail": 0,
-      "pct_clean": 98.9,
-      "runs_pass": 5,
+      "pct_clean": 99.1,
+      "runs_pass": 6,
       "runs_warn": 1,
       "runs_fail": 0,
       "runs": [
@@ -237,6 +237,27 @@
           "file": "20260322_104143_SOPH_NIST_seed_05.run.json",
           "date": "2026-03-22T02:41:43.611673+00:00",
           "seed": "05",
+          "verdict": "PASS",
+          "total_tests": 15,
+          "pass": 15,
+          "suspect": 0,
+          "fail": 0,
+          "pct_clean": 100.0,
+          "tlmax": null,
+          "reruns": {
+            "enabled": true,
+            "rounds": 0,
+            "initial_suspect": 0,
+            "resolved": 0,
+            "resolved_tests": [],
+            "remaining_suspect": 0,
+            "bitstreams_rerun": 4000
+          }
+        },
+        {
+          "file": "20260322_104300_SOPH_NIST_seed_0000.run.json",
+          "date": "2026-03-22T02:43:00.165256+00:00",
+          "seed": "0000",
           "verdict": "PASS",
           "total_tests": 15,
           "pass": 15,
@@ -477,9 +498,9 @@
     }
   },
   "totals": {
-    "total_runs": 24,
-    "total_tests": 1683,
-    "pass": 1682,
+    "total_runs": 25,
+    "total_tests": 1698,
+    "pass": 1697,
     "suspect": 1,
     "fail": 0,
     "pct_clean": 99.9
