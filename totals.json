@@ -1,11 +1,11 @@
 {
   "version": "V3",
   "generator": "soph_v3",
-  "last_updated": "2026-03-22T09:04:53.616196+00:00",
+  "last_updated": "2026-03-22T10:25:35.934165+00:00",
   "totals": {
-    "total_runs": 36,
-    "total_tests": 4305,
-    "pass": 4304,
+    "total_runs": 37,
+    "total_tests": 4465,
+    "pass": 4464,
     "suspect": 1,
     "fail": 0,
     "pct_clean": 100.0
@@ -56,13 +56,13 @@
       "runs_fail": 0
     },
     "bigcrush": {
-      "total_runs": 3,
-      "total_tests": 480,
-      "pass": 479,
+      "total_runs": 4,
+      "total_tests": 640,
+      "pass": 639,
       "suspect": 1,
       "fail": 0,
       "pct_clean": 99.8,
-      "runs_pass": 2,
+      "runs_pass": 3,
       "runs_warn": 1,
       "runs_fail": 0
     }
