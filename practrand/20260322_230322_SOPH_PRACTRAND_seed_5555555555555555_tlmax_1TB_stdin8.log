@@ -1,0 +1,59 @@
+# SOPH Battery Test Log
+# Suite:     practrand stdin8
+# Seed:      5555555555555555
+# Generator: $HOME/Desktop/SOPH_ALGO/bin/soph_v3 --gen --seed-hex 5555555555555555 --bytes 0
+# Date:      2026-03-22 23:03:22
+#======================================================================
+
+RNG_test using PractRand version 0.95
+RNG = RNG_stdin8, seed = unknown
+test set = core, folding = standard (8 bit)
+
+rng=RNG_stdin8, seed=unknown
+length= 1 gigabyte (2^30 bytes), time= 5.2 seconds
+  no anomalies in 136 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 2 gigabytes (2^31 bytes), time= 10.4 seconds
+  no anomalies in 145 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 4 gigabytes (2^32 bytes), time= 20.5 seconds
+  no anomalies in 151 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 8 gigabytes (2^33 bytes), time= 41.3 seconds
+  no anomalies in 159 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 16 gigabytes (2^34 bytes), time= 82.8 seconds
+  no anomalies in 167 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 32 gigabytes (2^35 bytes), time= 164 seconds
+  no anomalies in 173 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 64 gigabytes (2^36 bytes), time= 330 seconds
+  Test Name                         Raw       Processed     Evaluation
+  BCFN(2+2,13-0,T)                  R=  +8.6  p =  4.0e-4   unusual          
+  ...and 180 test result(s) without anomalies
+
+rng=RNG_stdin8, seed=unknown
+length= 128 gigabytes (2^37 bytes), time= 660 seconds
+  no anomalies in 189 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 256 gigabytes (2^38 bytes), time= 1303 seconds
+  no anomalies in 195 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 512 gigabytes (2^39 bytes), time= 2623 seconds
+  Test Name                         Raw       Processed     Evaluation
+  BCFN(2+7,13-0,T)                  R=  +9.9  p =  8.4e-5   unusual          
+  ...and 201 test result(s) without anomalies
+
+rng=RNG_stdin8, seed=unknown
+length= 1 terabyte (2^40 bytes), time= 5256 seconds
+  no anomalies in 209 test result(s)
+
