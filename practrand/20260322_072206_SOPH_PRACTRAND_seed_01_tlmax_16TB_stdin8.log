@@ -1,0 +1,31 @@
+# SOPH Battery Test Log
+# Suite:     practrand stdin8
+# Seed:      01
+# Generator: $HOME/Desktop/SOPH_ALGO/bin/soph_v3 --gen --seed-hex 01 --bytes 0
+# Date:      2026-03-22 07:22:06
+#======================================================================
+
+RNG_test using PractRand version 0.95
+RNG = RNG_stdin8, seed = unknown
+test set = core, folding = standard (8 bit)
+
+rng=RNG_stdin8, seed=unknown
+length= 1 terabyte (2^40 bytes), time= 5327 seconds
+  no anomalies in 209 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 2 terabytes (2^41 bytes), time= 10963 seconds
+  no anomalies in 214 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 4 terabytes (2^42 bytes), time= 22112 seconds
+  no anomalies in 220 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 8 terabytes (2^43 bytes), time= 44246 seconds
+  no anomalies in 226 test result(s)
+
+rng=RNG_stdin8, seed=unknown
+length= 16 terabytes (2^44 bytes), time= 86337 seconds
+  no anomalies in 230 test result(s)
+
