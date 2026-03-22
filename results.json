@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22T10:25:35.934165+00:00",
+  "last_updated": "2026-03-22T11:55:25.590204+00:00",
   "batteries": {
     "practrand": {
       "expected_run_pass_rate": "~100%",
@@ -599,13 +599,13 @@
       "expected_note": "160 tests at alpha=0.001. P(false positive per test) \u2248 0.2%. P(all 160 pass) \u2248 73%. 1-2 suspects per run is normal.",
       "sub_test_count": 160,
       "warn_threshold": "p < 0.001 or p > 0.999",
-      "total_runs": 4,
-      "total_tests": 640,
-      "pass": 639,
+      "total_runs": 5,
+      "total_tests": 800,
+      "pass": 799,
       "suspect": 1,
       "fail": 0,
-      "pct_clean": 99.8,
-      "runs_pass": 3,
+      "pct_clean": 99.9,
+      "runs_pass": 4,
       "runs_warn": 1,
       "runs_fail": 0,
       "runs": [
@@ -660,14 +660,27 @@
           "pct_clean": 100.0,
           "tlmax": null,
           "reruns": null
+        },
+        {
+          "file": "20260322_182541_SOPH_BIGCRUSH_seed_04.run.json",
+          "date": "2026-03-22T11:55:25.427922+00:00",
+          "seed": "04",
+          "verdict": "PASS",
+          "total_tests": 160,
+          "pass": 160,
+          "suspect": 0,
+          "fail": 0,
+          "pct_clean": 100.0,
+          "tlmax": null,
+          "reruns": null
         }
       ]
     }
   },
   "totals": {
-    "total_runs": 37,
-    "total_tests": 4465,
-    "pass": 4464,
+    "total_runs": 38,
+    "total_tests": 4625,
+    "pass": 4624,
     "suspect": 1,
     "fail": 0,
     "pct_clean": 100.0
