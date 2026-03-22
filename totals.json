@@ -1,11 +1,11 @@
 {
   "version": "V3",
   "generator": "soph_v3",
-  "last_updated": "2026-03-22T14:56:15.975514+00:00",
+  "last_updated": "2026-03-22T14:57:43.448692+00:00",
   "totals": {
-    "total_runs": 42,
-    "total_tests": 4975,
-    "pass": 4971,
+    "total_runs": 43,
+    "total_tests": 4990,
+    "pass": 4986,
     "suspect": 4,
     "fail": 0,
     "pct_clean": 99.9
@@ -34,13 +34,13 @@
       "runs_fail": 0
     },
     "nist": {
-      "total_runs": 10,
-      "total_tests": 154,
-      "pass": 154,
+      "total_runs": 11,
+      "total_tests": 169,
+      "pass": 169,
       "suspect": 0,
       "fail": 0,
       "pct_clean": 100.0,
-      "runs_pass": 10,
+      "runs_pass": 11,
       "runs_warn": 0,
       "runs_fail": 0
     },
