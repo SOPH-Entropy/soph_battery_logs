@@ -1,0 +1,59 @@
+# SOPH Battery Test Log
+# Suite:     practrand stdin32
+# Seed:      5555555555555555
+# Generator: $HOME/Desktop/SOPH_ALGO/bin/soph_v3 --gen --seed-hex 5555555555555555 --bytes 0
+# Date:      2026-03-23 01:50:06
+#======================================================================
+
+RNG_test using PractRand version 0.95
+RNG = RNG_stdin32, seed = unknown
+test set = core, folding = standard (32 bit)
+
+rng=RNG_stdin32, seed=unknown
+length= 1 gigabyte (2^30 bytes), time= 4.0 seconds
+  no anomalies in 194 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 2 gigabytes (2^31 bytes), time= 8.1 seconds
+  no anomalies in 205 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 4 gigabytes (2^32 bytes), time= 16.0 seconds
+  no anomalies in 217 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 8 gigabytes (2^33 bytes), time= 32.4 seconds
+  no anomalies in 230 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 16 gigabytes (2^34 bytes), time= 64.5 seconds
+  no anomalies in 240 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 32 gigabytes (2^35 bytes), time= 127 seconds
+  no anomalies in 251 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 64 gigabytes (2^36 bytes), time= 257 seconds
+  Test Name                         Raw       Processed     Evaluation
+  BCFN(2+2,13-0,T)                  R=  +8.6  p =  4.0e-4   unusual          
+  ...and 262 test result(s) without anomalies
+
+rng=RNG_stdin32, seed=unknown
+length= 128 gigabytes (2^37 bytes), time= 514 seconds
+  no anomalies in 273 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 256 gigabytes (2^38 bytes), time= 1017 seconds
+  no anomalies in 284 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 512 gigabytes (2^39 bytes), time= 2053 seconds
+  Test Name                         Raw       Processed     Evaluation
+  BCFN(2+7,13-0,T)                  R=  +9.9  p =  8.4e-5   unusual          
+  ...and 294 test result(s) without anomalies
+
+rng=RNG_stdin32, seed=unknown
+length= 1 terabyte (2^40 bytes), time= 4102 seconds
+  no anomalies in 304 test result(s)
+
