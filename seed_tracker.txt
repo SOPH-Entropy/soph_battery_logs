@@ -1,5 +1,5 @@
 SOPH V2 — Seed Usage Tracker
-Updated: 2026-03-22 14:57 UTC
+Updated: 2026-03-22 14:59 UTC
 ================================================================
 
 SUMMARY BY CATEGORY
@@ -41,10 +41,11 @@ low-entropy      ff                                                             
 low-entropy      ffff                                                                     WARN
 
 ======================================================================
-  NIST — 11 seeds tested
+  NIST — 12 seeds tested
 ======================================================================
 Category         Seed                                                                  Verdict
 ---------------- -------------------------------------------------------------------- --------
+64-bit           5555555555555555                                                         PASS
 low-entropy      00                                                                       PASS
 low-entropy      0000                                                                     PASS
 low-entropy      01                                                                       PASS
