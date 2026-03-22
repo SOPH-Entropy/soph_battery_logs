@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "suite": "nist",
+  "timestamp_utc": "2026-03-22T02:37:25.077650+00:00",
+  "artifact": {
+    "file": "usedLogs/20260322_103705_SOPH_NIST_seed_02.txt",
+    "sha256": "003b002078525553148390cecda4b48937bb55ca983d8f8ce02ed19b7406b759",
+    "size_bytes": 20184
+  },
+  "generator": {
+    "name": "generator",
+    "command": "$HOME/Desktop/SOPH_ALGO/bin/soph_v3 --gen --seed-hex 02 --bytes 0",
+    "binary": "$HOME/Desktop/SOPH_ALGO/bin/soph_v3",
+    "binary_sha256": "f7080fdff5aa566b4bb0110b0a5aa2fed59152dc9cf535019bc9ebe7176419d2",
+    "seed_hex": null
+  },
+  "battery": {
+    "suite": "nist",
+    "command": "$PUBLISH_ROOT/vendor/arcetri-sts/sts 1000000",
+    "tool": "vendor/arcetri-sts/sts",
+    "tool_sha256": "99c0e4107823d34d7fab99b76839230f6140b998b7a8b2c41a8d4e040ebff414",
+    "engine": "arcetri/sts v3 (multi-threaded)",
+    "threads": 14,
+    "stream_length_bits": 1000000,
+    "bitstreams": 1000,
+    "tests": "all"
+  },
+  "runner": {
+    "file": "run_battery.py",
+    "sha256": "6c702d582234a304312beea63c3206e353a162af92b4ff6cffeef08b7a88376f"
+  },
+  "source_commit": null,
+  "result": {
+    "verdict": "WARN",
+    "total_tests": 16,
+    "pass": 15,
+    "suspect": 1,
+    "fail": 0,
+    "pct_clean": 93.8,
+    "noted": [
+      {
+        "test": "NonOverlappingTemplate",
+        "flagged": 2,
+        "threshold": 4,
+        "expected_fps": 1.5,
+        "status": "within expected false-positive rate"
+      }
+    ],
+    "reruns": {
+      "enabled": true,
+      "rounds": 1,
+      "initial_suspect": 2,
+      "resolved": 0,
+      "resolved_tests": [],
+      "remaining_suspect": 1,
+      "bitstreams_rerun": 4000
+    }
+  },
+  "signature": {
+    "scheme": "openssl-dgst-sha256",
+    "public_key": "keys/signing-pub.pem",
+    "signature_file": "records/20260322_103705_SOPH_NIST_seed_02.run.json.sig"
+  }
+}
