@@ -1,5 +1,5 @@
 SOPH V2 — Seed Usage Tracker
-Updated: 2026-03-21 23:42 UTC
+Updated: 2026-03-22 00:02 UTC
 ================================================================
 
 SUMMARY BY CATEGORY
@@ -34,9 +34,10 @@ Category         Seed                                                           
 low-entropy      00                                                                       PASS
 
 ======================================================================
-  PRACTRAND — 1 seeds tested
+  PRACTRAND — 2 seeds tested
 ======================================================================
 Category         Seed                                                                  Verdict
 ---------------- -------------------------------------------------------------------- --------
 84-bit           00_tlmax_256GB_stdin8                                                    PASS
+88-bit           00_tlmax_256GB_stdin16                                                   PASS
 
