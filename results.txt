@@ -1,65 +1,65 @@
-SOPH V3 Battery Test Results — 2026-03-22 03:18 UTC
+SOPH V3 Battery Test Results — 2026-03-22 03:20 UTC
 ======================================================================
 
 ══ smallcrush (12 runs) ══
 
   [low-entropy] 9 seeds — 9/9 PASS, 0W 0F across 135 tests
-  Seed                                     Verdict   Total   Pass   Weak   Fail  Tags
-  ──────────────────────────────────────── ───────  ───── ───── ───── ─────  ──────────
-  00                                       PASS         15     15      0      0  all-zeros
-  01                                       PASS         15     15      0      0  
-  02                                       PASS         15     15      0      0  prime
-  03                                       PASS         15     15      0      0  prime
-  04                                       PASS         15     15      0      0  
-  05                                       PASS         15     15      0      0  prime
-  0000                                     PASS         15     15      0      0  all-zeros
-  ff                                       PASS         15     15      0      0  all-ones
-  ffff                                     PASS         15     15      0      0  all-ones
+  Seed                           Verdict   Total   Pass  Noise   Weak   Fail  Notes
+  ────────────────────────────── ───────  ───── ───── ───── ───── ─────  ────────────────────────────────────────
+  00                             PASS         15     15      0      0      0  all-zeros
+  01                             PASS         15     15      0      0      0  
+  02                             PASS         15     15      0      0      0  prime
+  03                             PASS         15     15      0      0      0  prime
+  04                             PASS         15     15      0      0      0  
+  05                             PASS         15     15      0      0      0  prime
+  0000                           PASS         15     15      0      0      0  all-zeros
+  ff                             PASS         15     15      0      0      0  all-ones
+  ffff                           PASS         15     15      0      0      0  all-ones
 
   [medium-entropy] 3 seeds — 3/3 PASS, 0W 0F across 45 tests
-  Seed                                     Verdict   Total   Pass   Weak   Fail  Tags
-  ──────────────────────────────────────── ───────  ───── ───── ───── ─────  ──────────
-  abababababababab                         PASS         15     15      0      0  repeating
-  deaddeaddeaddead                         PASS         15     15      0      0  repeating
-  0123456789abcdef                         PASS         15     15      0      0  
+  Seed                           Verdict   Total   Pass  Noise   Weak   Fail  Notes
+  ────────────────────────────── ───────  ───── ───── ───── ───── ─────  ────────────────────────────────────────
+  abababababababab               PASS         15     15      0      0      0  repeating
+  deaddeaddeaddead               PASS         15     15      0      0      0  repeating
+  0123456789abcdef               PASS         15     15      0      0      0  
 
 ══ bigcrush (1 runs) ══
 
   [low-entropy] 1 seeds — 1/1 PASS, 0W 0F across 160 tests
-  Seed                                     Verdict   Total   Pass   Weak   Fail  Tags
-  ──────────────────────────────────────── ───────  ───── ───── ───── ─────  ──────────
-  00                                       PASS        160    160      0      0  all-zeros
+  Seed                           Verdict   Total   Pass  Noise   Weak   Fail  Notes
+  ────────────────────────────── ───────  ───── ───── ───── ───── ─────  ────────────────────────────────────────
+  00                             PASS        160    160      0      0      0  all-zeros
 
 ══ nist (8 runs) ══
 
-  [low-entropy] 8 seeds — 8/8 PASS, 8W 0F across 1533 tests
-  Seed                                     Verdict   Total   Pass   Weak   Fail  Tags
-  ──────────────────────────────────────── ───────  ───── ───── ───── ─────  ──────────
-  00                                       PASS        188    185      3      0  all-zeros  [noted: NonOverlappingTemplate:?]
-  01                                       PASS        188    188      0      0  
-  03                                       PASS        188    188      0      0  prime
-  04                                       PASS        191    189      2      0  
-  05                                       PASS        188    187      1      0  prime  [noted: NonOverlappingTemplate:?]
-  0000                                     PASS        188    188      0      0  all-zeros
-  ff                                       PASS        188    188      0      0  all-ones
-  ffff                                     PASS        214    212      2      0  all-ones
+  [low-entropy] 8 seeds — 8/8 PASS, 8W 0F across 1533 tests (6 noise)
+  Seed                           Verdict   Total   Pass  Noise   Weak   Fail  Notes
+  ────────────────────────────── ───────  ───── ───── ───── ───── ─────  ────────────────────────────────────────
+  00                             PASS        188    186      1      3      0  NonOverlappingTemplate×1 (noise)
+  01                             PASS        188    188      0      0      0  
+  03                             PASS        188    188      0      0      0  prime
+  04                             PASS        191    191      2      2      0  CumulativeSums×1; Frequency×1
+  05                             PASS        188    188      1      1      0  NonOverlappingTemplate×1 (noise)
+  0000                           PASS        188    188      0      0      0  all-zeros
+  ff                             PASS        188    188      0      0      0  all-ones
+  ffff                           PASS        214    214      2      2      0  RandomExcursions×1 (noise); RandomExcursionsVariant×1 (noise)
 
 ══ dieharder (1 runs) ══
 
   [low-entropy] 1 seeds — 1/1 PASS, 0W 0F across 114 tests
-  Seed                                     Verdict   Total   Pass   Weak   Fail  Tags
-  ──────────────────────────────────────── ───────  ───── ───── ───── ─────  ──────────
-  00                                       PASS        114    114      0      0  all-zeros
+  Seed                           Verdict   Total   Pass  Noise   Weak   Fail  Notes
+  ────────────────────────────── ───────  ───── ───── ───── ───── ─────  ────────────────────────────────────────
+  00                             PASS        114    114      0      0      0  all-zeros
 
 ══ practrand (4 runs) ══
 
   [production-128bit] 4 seeds — 4/4 PASS, 0W 0F across 1136 tests
-  Seed                                     Verdict   Total   Pass   Weak   Fail  Tags
-  ──────────────────────────────────────── ───────  ───── ───── ───── ─────  ──────────
-  00 (stdin8, 256GB)                       PASS        195    195      0      0  
-  00 (stdin16, 256GB)                      PASS        288    288      0      0  
-  00 (stdin32, 256GB)                      PASS        284    284      0      0  
-  00 (stdin64, 256GB)                      PASS        369    369      0      0  
+  Seed                           Verdict   Total   Pass  Noise   Weak   Fail  Notes
+  ────────────────────────────── ───────  ───── ───── ───── ───── ─────  ────────────────────────────────────────
+  00 (stdin8, 256GB)             PASS        195    195      0      0      0  
+  00 (stdin16, 256GB)            PASS        288    288      0      0      0  
+  00 (stdin32, 256GB)            PASS        284    284      0      0      0  
+  00 (stdin64, 256GB)            PASS        369    369      0      0      0  
 
 ══ Overall Summary ══
 Suite         Seeds   PASS   WARN   FAIL   Tests   Weak Failed

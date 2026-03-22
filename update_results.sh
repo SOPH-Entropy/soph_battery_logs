@@ -86,6 +86,33 @@ for suite in suites:
                 weak = max(0, flagged - noted_count)
                 passed = total - weak - failed
 
+        # Build noise notes from NIST flagged tests
+        noted = r.get("noted", [])
+        noise_notes = []
+        if suite == "nist" and os.path.exists(f.replace(".run.json", ".txt")):
+            log_file = f.replace(".run.json", ".txt")
+            with open(log_file) as lf2:
+                flag_lines = [l.rstrip() for l in lf2 if '*' in l
+                              and re.search(r'\d+/\d+', l)
+                              and not l.strip().startswith('#')]
+            # Known noise sources
+            _NOISE_TESTS = {
+                "DFT": "known NIST variance bug (Kim et al. 2004)",
+                "FFT": "known NIST variance bug (Kim et al. 2004)",
+                "NonOverlappingTemplate": "148 sub-tests, ~1.5 expected FPs at alpha=0.01",
+                "RandomExcursions": "8 sub-tests, ~0.08 expected FPs at alpha=0.01",
+                "RandomExcursionsVariant": "18 sub-tests, ~0.18 expected FPs at alpha=0.01",
+            }
+            for fl in flag_lines:
+                tokens = fl.split()
+                tname = tokens[-1] if tokens else ""
+                if tname in _NOISE_TESTS:
+                    noise_notes.append(f"noise({tname}): {_NOISE_TESTS[tname]}")
+                else:
+                    noise_notes.append(f"flag({tname})")
+            # Deduplicate
+            noise_notes = sorted(set(noise_notes))
+
         results.append({
             "seed": seed, "cat": cat, "tags": tags,
             "verdict": r.get("verdict", "?"),
@@ -93,7 +120,8 @@ for suite in suites:
             "pass":  passed,
             "weak":  weak,
             "fail":  failed,
-            "noted": r.get("noted", []),
+            "noted": noted,
+            "noise_notes": noise_notes,
         })
     all_results[suite] = results
 
@@ -119,17 +147,39 @@ for suite in suites:
         total_f = sum(x["fail"]  for x in items)
         n_pass  = sum(1 for x in items if x["verdict"] == "PASS")
 
-        print(f"\n  [{cat}] {len(items)} seeds — {n_pass}/{len(items)} PASS, {total_w}W {total_f}F across {total_t} tests")
-        print(f"  {'Seed':<40s} {'Verdict':<8s} {'Total':>6s} {'Pass':>6s} {'Weak':>6s} {'Fail':>6s}  Tags")
-        print(f"  {'─' * 40} {'─' * 7}  {'─' * 5} {'─' * 5} {'─' * 5} {'─' * 5}  {'─' * 10}")
+        total_noise = sum(len(x.get("noise_notes", [])) for x in items)
+        print(f"\n  [{cat}] {len(items)} seeds — {n_pass}/{len(items)} PASS, {total_w}W {total_f}F across {total_t} tests" +
+              (f" ({total_noise} noise)" if total_noise else ""))
+        print(f"  {'Seed':<30s} {'Verdict':<8s} {'Total':>6s} {'Pass':>6s} {'Noise':>6s} {'Weak':>6s} {'Fail':>6s}  Notes")
+        print(f"  {'─' * 30} {'─' * 7}  {'─' * 5} {'─' * 5} {'─' * 5} {'─' * 5} {'─' * 5}  {'─' * 40}")
         for r in items:
             tag_str = ", ".join(r["tags"]) if r["tags"] else ""
-            seed_display = r["seed"] if len(r["seed"]) <= 38 else r["seed"][:35] + "..."
-            noted_str = ""
-            if r.get("noted"):
-                notes = [f"{n.get('test','?')}:{n.get('count','?')}" for n in r["noted"] if isinstance(n, dict)]
-                noted_str = f"  [noted: {', '.join(notes)}]"
-            print(f"  {seed_display:<40s} {r['verdict']:<8s} {r['total']:>6} {r['pass']:>6} {r['weak']:>6} {r['fail']:>6}  {tag_str}{noted_str}")
+            seed_display = r["seed"] if len(r["seed"]) <= 30 else r["seed"][:27] + "..."
+            noise = r.get("noise_notes", [])
+            n_noise = len(noise)
+            # Distinguish: real weak = flagged minus noise
+            real_weak = r["weak"]
+            actual_pass = r["pass"] + n_noise  # noise flags are effectively passes
+            # Build notes string
+            if noise:
+                # Summarise noise by type
+                noise_types = {}
+                for nn in noise:
+                    # Extract test name from "noise(TestName): reason"
+                    m2 = re.match(r'(noise|flag)\((\w+)\)', nn)
+                    if m2:
+                        noise_types.setdefault(m2.group(2), []).append(m2.group(1))
+                note_parts = []
+                for tname, kinds in noise_types.items():
+                    count = len(kinds)
+                    if all(k == "noise" for k in kinds):
+                        note_parts.append(f"{tname}×{count} (noise)")
+                    else:
+                        note_parts.append(f"{tname}×{count}")
+                notes_str = "; ".join(note_parts)
+            else:
+                notes_str = tag_str
+            print(f"  {seed_display:<30s} {r['verdict']:<8s} {r['total']:>6} {actual_pass:>6} {n_noise:>6} {real_weak:>6} {r['fail']:>6}  {notes_str}")
 
 # ── Overall summary ──
 print(f"\n{'═' * 2} Overall Summary {'═' * 2}")
