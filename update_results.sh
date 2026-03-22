@@ -57,14 +57,43 @@ for suite in suites:
             data = json.load(fh)
         r = data["result"]
         seed = os.path.basename(f).split("seed_")[-1].replace(".run.json", "")
+        # PractRand: strip tlmin/tlmax size but keep width (stdin8/16/32/64)
+        # e.g. "00_tlmax_256GB_stdin8" → "00 (stdin8, 256GB)"
+        m = re.match(r'^(.+?)_tlmax_(\w+?)_(stdin\d+)$', seed)
+        if m:
+            seed = f"{m.group(1)} ({m.group(3)}, {m.group(2)})"
         cat, tags = categorise(seed)
+
+        total = r.get("total_tests", r.get("total", 0))
+        passed = r.get("pass", r.get("passed", 0))
+        weak = r.get("suspect", r.get("weak", 0))
+        failed = r.get("fail", r.get("failed", 0))
+
+        # NIST: count actual individual test lines from the log file
+        # (the JSON total_tests only counts test types, not sub-tests)
+        if suite == "nist":
+            log_file = f.replace(".run.json", ".txt")
+            if os.path.exists(log_file):
+                with open(log_file) as lf:
+                    # Count lines with proportion pattern (e.g. 990/1000)
+                    nist_lines = [l for l in lf if re.search(r'\d+/\d+\s', l)
+                                  and not l.strip().startswith('#')]
+                total = len(nist_lines)
+                # Count flagged lines (with *)
+                flagged = sum(1 for l in nist_lines if '*' in l)
+                # Noted = below-threshold flags (not real failures)
+                noted_count = sum(n.get("count", 0) for n in r.get("noted", []) if isinstance(n, dict))
+                weak = max(0, flagged - noted_count)
+                passed = total - weak - failed
+
         results.append({
             "seed": seed, "cat": cat, "tags": tags,
             "verdict": r.get("verdict", "?"),
-            "total": r.get("total_tests", r.get("total", 0)),
-            "pass":  r.get("pass", r.get("passed", 0)),
-            "weak":  r.get("suspect", r.get("weak", 0)),
-            "fail":  r.get("fail", r.get("failed", 0)),
+            "total": total,
+            "pass":  passed,
+            "weak":  weak,
+            "fail":  failed,
+            "noted": r.get("noted", []),
         })
     all_results[suite] = results
 
@@ -96,7 +125,11 @@ for suite in suites:
         for r in items:
             tag_str = ", ".join(r["tags"]) if r["tags"] else ""
             seed_display = r["seed"] if len(r["seed"]) <= 38 else r["seed"][:35] + "..."
-            print(f"  {seed_display:<40s} {r['verdict']:<8s} {r['total']:>6} {r['pass']:>6} {r['weak']:>6} {r['fail']:>6}  {tag_str}")
+            noted_str = ""
+            if r.get("noted"):
+                notes = [f"{n.get('test','?')}:{n.get('count','?')}" for n in r["noted"] if isinstance(n, dict)]
+                noted_str = f"  [noted: {', '.join(notes)}]"
+            print(f"  {seed_display:<40s} {r['verdict']:<8s} {r['total']:>6} {r['pass']:>6} {r['weak']:>6} {r['fail']:>6}  {tag_str}{noted_str}")
 
 # ── Overall summary ──
 print(f"\n{'═' * 2} Overall Summary {'═' * 2}")
