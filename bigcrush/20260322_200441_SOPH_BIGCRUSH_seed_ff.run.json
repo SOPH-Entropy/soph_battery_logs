@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "suite": "bigcrush",
+  "timestamp_utc": "2026-03-22T13:22:34.452467+00:00",
+  "artifact": {
+    "file": "usedLogs/20260322_200441_SOPH_BIGCRUSH_seed_ff.log",
+    "sha256": "abeb150a5c7206eea888cf6fde217f4dd2f8a300d62bc7fbcac358c74820cda8",
+    "size_bytes": 94830
+  },
+  "generator": {
+    "name": "generator",
+    "command": "$HOME/Desktop/SOPH_ALGO/bin/soph_v3 --gen --seed-hex ff --bytes 0",
+    "binary": "$HOME/Desktop/SOPH_ALGO/bin/soph_v3",
+    "binary_sha256": "f7080fdff5aa566b4bb0110b0a5aa2fed59152dc9cf535019bc9ebe7176419d2",
+    "seed_hex": null
+  },
+  "battery": {
+    "suite": "bigcrush",
+    "command": "$PUBLISH_ROOT/bin/testu01_stdin_bridge bigcrush generator",
+    "tool": "bin/testu01_stdin_bridge",
+    "tool_sha256": "5b6256e7effaac66f796a2585f14046ae85962b1f8f0bf3e56c19eebb2dd5961",
+    "testu01_root": "$LEGACY_SOPH_C/TestU01-1.2.3",
+    "mode": "native"
+  },
+  "runner": {
+    "file": "run_battery.py",
+    "sha256": "44ba1f5106390abbcbaf74a7e6cf79e35a1ee8e1db21e029f87aab6b7561fc9c"
+  },
+  "source_commit": null,
+  "result": {
+    "verdict": "PASS",
+    "total_tests": 160,
+    "pass": 160,
+    "suspect": 0,
+    "fail": 0,
+    "pct_clean": 100.0
+  },
+  "signature": {
+    "scheme": "openssl-dgst-sha256",
+    "public_key": "keys/signing-pub.pem",
+    "signature_file": "records/20260322_200441_SOPH_BIGCRUSH_seed_ff.run.json.sig"
+  }
+}
