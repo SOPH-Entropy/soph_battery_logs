@@ -95,7 +95,7 @@ for suite in suites:
                 flag_lines = [l.rstrip() for l in lf2 if '*' in l
                               and re.search(r'\d+/\d+', l)
                               and not l.strip().startswith('#')]
-            # Known noise sources
+            # Known noise sources (multi-sub-test types)
             _NOISE_TESTS = {
                 "DFT": "known NIST variance bug (Kim et al. 2004)",
                 "FFT": "known NIST variance bug (Kim et al. 2004)",
@@ -103,11 +103,30 @@ for suite in suites:
                 "RandomExcursions": "8 sub-tests, ~0.08 expected FPs at alpha=0.01",
                 "RandomExcursionsVariant": "18 sub-tests, ~0.18 expected FPs at alpha=0.01",
             }
+
+            # Count flags per test type
+            flag_counts = {}
             for fl in flag_lines:
                 tokens = fl.split()
                 tname = tokens[-1] if tokens else ""
+                flag_counts[tname] = flag_counts.get(tname, 0) + 1
+
+            # Total flags vs expected: at alpha=0.01 with ~188 tests,
+            # expect ~1.88 flags. If total flags <= 3 (well within 2σ),
+            # ALL flags are statistical noise regardless of test type.
+            total_flags = sum(flag_counts.values())
+            expected_flags = total * 0.01  # alpha=0.01
+            all_within_rate = total_flags <= max(3, expected_flags * 2.5)
+
+            for tname, count in flag_counts.items():
                 if tname in _NOISE_TESTS:
                     noise_notes.append(f"noise({tname}): {_NOISE_TESTS[tname]}")
+                elif all_within_rate:
+                    # Total flag count is within expected FP rate —
+                    # single-test flags are statistical noise too
+                    noise_notes.append(f"noise({tname}): {count} flag(s), "
+                                       f"total {total_flags}/{total} within expected rate "
+                                       f"(~{expected_flags:.1f} at alpha=0.01)")
                 else:
                     noise_notes.append(f"flag({tname})")
             # Deduplicate

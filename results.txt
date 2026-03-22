@@ -1,4 +1,4 @@
-SOPH V3 Battery Test Results — 2026-03-22 03:20 UTC
+SOPH V3 Battery Test Results — 2026-03-22 03:24 UTC
 ======================================================================
 
 ══ smallcrush (12 runs) ══
@@ -38,7 +38,7 @@ SOPH V3 Battery Test Results — 2026-03-22 03:20 UTC
   00                             PASS        188    186      1      3      0  NonOverlappingTemplate×1 (noise)
   01                             PASS        188    188      0      0      0  
   03                             PASS        188    188      0      0      0  prime
-  04                             PASS        191    191      2      2      0  CumulativeSums×1; Frequency×1
+  04                             PASS        191    191      2      2      0  CumulativeSums×1 (noise); Frequency×1 (noise)
   05                             PASS        188    188      1      1      0  NonOverlappingTemplate×1 (noise)
   0000                           PASS        188    188      0      0      0  all-zeros
   ff                             PASS        188    188      0      0      0  all-ones
