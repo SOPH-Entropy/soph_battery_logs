@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "suite": "dieharder",
+  "timestamp_utc": "2026-03-23T02:21:32.697485+00:00",
+  "artifact": {
+    "file": "usedLogs/20260323_100620_SOPH_DIEHARDER_seed_01.log",
+    "sha256": "5d580f8458ba1e1d33bac5a3515dad480110c793917d3b73c0eec54cea5deca3",
+    "size_bytes": 12305
+  },
+  "generator": {
+    "name": "generator",
+    "command": "$HOME/Desktop/SOPH_ALGO/bin/soph_v3 --gen --seed-hex 01 --bytes 0",
+    "binary": "$HOME/Desktop/SOPH_ALGO/bin/soph_v3",
+    "binary_sha256": "f7080fdff5aa566b4bb0110b0a5aa2fed59152dc9cf535019bc9ebe7176419d2",
+    "seed_hex": null
+  },
+  "battery": {
+    "suite": "dieharder",
+    "command": "/usr/local/bin/docker run --rm -i --hostname soph-test-runner debian:stable-slim bash -lc 'export DEBIAN_FRONTEND=noninteractive && apt-get update -qq && apt-get install -y dieharder -qq 2>/dev/null && dieharder -a -g 200'",
+    "tool": "/usr/local/bin/docker",
+    "tool_sha256": "b327149541f052cb91442081b3a1be2c44f228aea2dedee9f28ee9cc00cd4122",
+    "mode": "docker",
+    "args": "-a -g 200",
+    "rerun_weak": true
+  },
+  "runner": {
+    "file": "run_battery.py",
+    "sha256": "44ba1f5106390abbcbaf74a7e6cf79e35a1ee8e1db21e029f87aab6b7561fc9c"
+  },
+  "source_commit": null,
+  "result": {
+    "verdict": "PASS",
+    "total_tests": 114,
+    "pass": 114,
+    "suspect": 0,
+    "fail": 0,
+    "pct_clean": 100.0,
+    "reruns": {
+      "enabled": true,
+      "rounds": 1,
+      "initial_weak": 1,
+      "resolved": 1,
+      "resolved_tests": [
+        "rgb_lagged_sum"
+      ],
+      "remaining_weak": 0
+    }
+  },
+  "signature": {
+    "scheme": "openssl-dgst-sha256",
+    "public_key": "keys/signing-pub.pem",
+    "signature_file": "records/20260323_100620_SOPH_DIEHARDER_seed_01.run.json.sig"
+  }
+}
