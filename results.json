@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-23T02:21:32.894231+00:00",
+  "last_updated": "2026-03-23T02:53:39.609929+00:00",
   "batteries": {
     "practrand": {
       "expected_run_pass_rate": "~100%",
@@ -296,13 +296,13 @@
       "expected_note": "114 tests at alpha=0.005. Each has ~1% false-positive (WEAK) rate. Expect 1-2 WEAKs per run. Multiple-comparisons: P(all pass) \u2248 0.32. A run with \u22643 WEAKs and 0 FAILs is normal.",
       "sub_test_count": 114,
       "warn_threshold": "p < 0.005 or p > 0.995",
-      "total_runs": 2,
-      "total_tests": 228,
-      "pass": 228,
+      "total_runs": 3,
+      "total_tests": 342,
+      "pass": 342,
       "suspect": 0,
       "fail": 0,
       "pct_clean": 100.0,
-      "runs_pass": 2,
+      "runs_pass": 3,
       "runs_warn": 0,
       "runs_fail": 0,
       "runs": [
@@ -346,6 +346,29 @@
             "initial_weak": 1,
             "resolved": 1,
             "resolved_tests": [
+              "rgb_lagged_sum"
+            ],
+            "remaining_weak": 0
+          }
+        },
+        {
+          "file": "20260323_103557_SOPH_DIEHARDER_seed_03.run.json",
+          "date": "2026-03-23T02:53:39.398007+00:00",
+          "seed": "03",
+          "verdict": "PASS",
+          "total_tests": 114,
+          "pass": 114,
+          "suspect": 0,
+          "fail": 0,
+          "pct_clean": 100.0,
+          "tlmax": null,
+          "reruns": {
+            "enabled": true,
+            "rounds": 1,
+            "initial_weak": 2,
+            "resolved": 2,
+            "resolved_tests": [
+              "rgb_lagged_sum",
               "rgb_lagged_sum"
             ],
             "remaining_weak": 0
@@ -990,9 +1013,9 @@
     }
   },
   "totals": {
-    "total_runs": 57,
-    "total_tests": 7830,
-    "pass": 7826,
+    "total_runs": 58,
+    "total_tests": 7944,
+    "pass": 7940,
     "suspect": 4,
     "fail": 0,
     "pct_clean": 99.9

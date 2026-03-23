@@ -1,0 +1,272 @@
+#======================================================================
+
+Selecting previously unselected package libgslcblas0:arm64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4932 files and directories currently installed.)
+Preparing to unpack .../libgslcblas0_2.8+dfsg-5_arm64.deb ...
+Unpacking libgslcblas0:arm64 (2.8+dfsg-5) ...
+Selecting previously unselected package libgsl28:arm64.
+Preparing to unpack .../libgsl28_2.8+dfsg-5_arm64.deb ...
+Unpacking libgsl28:arm64 (2.8+dfsg-5) ...
+Selecting previously unselected package libdieharder3t64.
+Preparing to unpack .../libdieharder3t64_3.31.1.4-1.1+b1_arm64.deb ...
+Unpacking libdieharder3t64 (3.31.1.4-1.1+b1) ...
+Selecting previously unselected package dieharder.
+Preparing to unpack .../dieharder_3.31.1.4-1.1+b1_arm64.deb ...
+Unpacking dieharder (3.31.1.4-1.1+b1) ...
+Setting up libgslcblas0:arm64 (2.8+dfsg-5) ...
+Setting up libgsl28:arm64 (2.8+dfsg-5) ...
+Setting up libdieharder3t64 (3.31.1.4-1.1+b1) ...
+Setting up dieharder (3.31.1.4-1.1+b1) ...
+Processing triggers for libc-bin (2.41-12) ...
+#=============================================================================#
+#            dieharder version 3.31.1 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |rands/second|   Seed   |
+stdin_input_raw|  8.69e+07  |1051249875|
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+   diehard_birthdays|   0|       100|     100|0.59319737|  PASSED  
+      diehard_operm5|   0|   1000000|     100|0.32313915|  PASSED  
+  diehard_rank_32x32|   0|     40000|     100|0.77220226|  PASSED  
+    diehard_rank_6x8|   0|    100000|     100|0.81488785|  PASSED  
+   diehard_bitstream|   0|   2097152|     100|0.68439156|  PASSED  
+        diehard_opso|   0|   2097152|     100|0.42411538|  PASSED  
+        diehard_oqso|   0|   2097152|     100|0.80974208|  PASSED  
+         diehard_dna|   0|   2097152|     100|0.12074016|  PASSED  
+diehard_count_1s_str|   0|    256000|     100|0.85017620|  PASSED  
+diehard_count_1s_byt|   0|    256000|     100|0.66866129|  PASSED  
+ diehard_parking_lot|   0|     12000|     100|0.63965905|  PASSED  
+    diehard_2dsphere|   2|      8000|     100|0.58372437|  PASSED  
+    diehard_3dsphere|   3|      4000|     100|0.78906824|  PASSED  
+     diehard_squeeze|   0|    100000|     100|0.11085835|  PASSED  
+        diehard_sums|   0|       100|     100|0.37762846|  PASSED  
+        diehard_runs|   0|    100000|     100|0.99169243|  PASSED  
+        diehard_runs|   0|    100000|     100|0.98438466|  PASSED  
+       diehard_craps|   0|    200000|     100|0.70843072|  PASSED  
+       diehard_craps|   0|    200000|     100|0.22396475|  PASSED  
+ marsaglia_tsang_gcd|   0|  10000000|     100|0.55004514|  PASSED  
+ marsaglia_tsang_gcd|   0|  10000000|     100|0.92387061|  PASSED  
+         sts_monobit|   1|    100000|     100|0.53021969|  PASSED  
+            sts_runs|   2|    100000|     100|0.72325813|  PASSED  
+          sts_serial|   1|    100000|     100|0.81037679|  PASSED  
+          sts_serial|   2|    100000|     100|0.68686398|  PASSED  
+          sts_serial|   3|    100000|     100|0.97109412|  PASSED  
+          sts_serial|   3|    100000|     100|0.42266665|  PASSED  
+          sts_serial|   4|    100000|     100|0.94671663|  PASSED  
+          sts_serial|   4|    100000|     100|0.47187670|  PASSED  
+          sts_serial|   5|    100000|     100|0.96949834|  PASSED  
+          sts_serial|   5|    100000|     100|0.82887715|  PASSED  
+          sts_serial|   6|    100000|     100|0.11550991|  PASSED  
+          sts_serial|   6|    100000|     100|0.44901867|  PASSED  
+          sts_serial|   7|    100000|     100|0.92897280|  PASSED  
+          sts_serial|   7|    100000|     100|0.29112182|  PASSED  
+          sts_serial|   8|    100000|     100|0.40274679|  PASSED  
+          sts_serial|   8|    100000|     100|0.00783888|  PASSED  
+          sts_serial|   9|    100000|     100|0.40650889|  PASSED  
+          sts_serial|   9|    100000|     100|0.79391462|  PASSED  
+          sts_serial|  10|    100000|     100|0.51729207|  PASSED  
+          sts_serial|  10|    100000|     100|0.30659497|  PASSED  
+          sts_serial|  11|    100000|     100|0.69721698|  PASSED  
+          sts_serial|  11|    100000|     100|0.41881739|  PASSED  
+          sts_serial|  12|    100000|     100|0.25053567|  PASSED  
+          sts_serial|  12|    100000|     100|0.32884467|  PASSED  
+          sts_serial|  13|    100000|     100|0.62014150|  PASSED  
+          sts_serial|  13|    100000|     100|0.97507862|  PASSED  
+          sts_serial|  14|    100000|     100|0.93711922|  PASSED  
+          sts_serial|  14|    100000|     100|0.09096455|  PASSED  
+          sts_serial|  15|    100000|     100|0.52387828|  PASSED  
+          sts_serial|  15|    100000|     100|0.28394740|  PASSED  
+          sts_serial|  16|    100000|     100|0.33401849|  PASSED  
+          sts_serial|  16|    100000|     100|0.49386183|  PASSED  
+         rgb_bitdist|   1|    100000|     100|0.21402527|  PASSED  
+         rgb_bitdist|   2|    100000|     100|0.95467998|  PASSED  
+         rgb_bitdist|   3|    100000|     100|0.72996475|  PASSED  
+         rgb_bitdist|   4|    100000|     100|0.96609881|  PASSED  
+         rgb_bitdist|   5|    100000|     100|0.32702525|  PASSED  
+         rgb_bitdist|   6|    100000|     100|0.27570503|  PASSED  
+         rgb_bitdist|   7|    100000|     100|0.24999559|  PASSED  
+         rgb_bitdist|   8|    100000|     100|0.78090528|  PASSED  
+         rgb_bitdist|   9|    100000|     100|0.94190482|  PASSED  
+         rgb_bitdist|  10|    100000|     100|0.70610445|  PASSED  
+         rgb_bitdist|  11|    100000|     100|0.72773008|  PASSED  
+         rgb_bitdist|  12|    100000|     100|0.02907930|  PASSED  
+rgb_minimum_distance|   2|     10000|    1000|0.68604180|  PASSED  
+rgb_minimum_distance|   3|     10000|    1000|0.31257748|  PASSED  
+rgb_minimum_distance|   4|     10000|    1000|0.53466065|  PASSED  
+rgb_minimum_distance|   5|     10000|    1000|0.92893000|  PASSED  
+    rgb_permutations|   2|    100000|     100|0.77376751|  PASSED  
+    rgb_permutations|   3|    100000|     100|0.80901687|  PASSED  
+    rgb_permutations|   4|    100000|     100|0.10313220|  PASSED  
+    rgb_permutations|   5|    100000|     100|0.67059495|  PASSED  
+      rgb_lagged_sum|   0|   1000000|     100|0.53228607|  PASSED  
+      rgb_lagged_sum|   1|   1000000|     100|0.70389676|  PASSED  
+      rgb_lagged_sum|   2|   1000000|     100|0.86032446|  PASSED  
+      rgb_lagged_sum|   3|   1000000|     100|0.00269468|   WEAK   
+      rgb_lagged_sum|   4|   1000000|     100|0.36461474|  PASSED  
+      rgb_lagged_sum|   5|   1000000|     100|0.79364235|  PASSED  
+      rgb_lagged_sum|   6|   1000000|     100|0.19996850|  PASSED  
+      rgb_lagged_sum|   7|   1000000|     100|0.78979102|  PASSED  
+      rgb_lagged_sum|   8|   1000000|     100|0.26091136|  PASSED  
+      rgb_lagged_sum|   9|   1000000|     100|0.50222650|  PASSED  
+      rgb_lagged_sum|  10|   1000000|     100|0.86306603|  PASSED  
+      rgb_lagged_sum|  11|   1000000|     100|0.65159436|  PASSED  
+      rgb_lagged_sum|  12|   1000000|     100|0.99901043|   WEAK   
+      rgb_lagged_sum|  13|   1000000|     100|0.22302443|  PASSED  
+      rgb_lagged_sum|  14|   1000000|     100|0.41819407|  PASSED  
+      rgb_lagged_sum|  15|   1000000|     100|0.01244201|  PASSED  
+      rgb_lagged_sum|  16|   1000000|     100|0.69612175|  PASSED  
+      rgb_lagged_sum|  17|   1000000|     100|0.15354960|  PASSED  
+      rgb_lagged_sum|  18|   1000000|     100|0.76588057|  PASSED  
+      rgb_lagged_sum|  19|   1000000|     100|0.32165751|  PASSED  
+      rgb_lagged_sum|  20|   1000000|     100|0.90677551|  PASSED  
+      rgb_lagged_sum|  21|   1000000|     100|0.16046867|  PASSED  
+      rgb_lagged_sum|  22|   1000000|     100|0.70660340|  PASSED  
+      rgb_lagged_sum|  23|   1000000|     100|0.82281582|  PASSED  
+      rgb_lagged_sum|  24|   1000000|     100|0.84932928|  PASSED  
+      rgb_lagged_sum|  25|   1000000|     100|0.23735743|  PASSED  
+      rgb_lagged_sum|  26|   1000000|     100|0.86000632|  PASSED  
+      rgb_lagged_sum|  27|   1000000|     100|0.82028627|  PASSED  
+      rgb_lagged_sum|  28|   1000000|     100|0.12194630|  PASSED  
+      rgb_lagged_sum|  29|   1000000|     100|0.78892184|  PASSED  
+      rgb_lagged_sum|  30|   1000000|     100|0.22421606|  PASSED  
+      rgb_lagged_sum|  31|   1000000|     100|0.26872762|  PASSED  
+      rgb_lagged_sum|  32|   1000000|     100|0.89869491|  PASSED  
+     rgb_kstest_test|   0|     10000|    1000|0.33677804|  PASSED  
+     dab_bytedistrib|   0|  51200000|       1|0.17588699|  PASSED  
+             dab_dct| 256|     50000|       1|0.07916838|  PASSED  
+Preparing to run test 207.  ntuple = 0
+        dab_filltree|  32|  15000000|       1|0.23462452|  PASSED  
+        dab_filltree|  32|  15000000|       1|0.61668707|  PASSED  
+Preparing to run test 208.  ntuple = 0
+       dab_filltree2|   0|   5000000|       1|0.84157901|  PASSED  
+       dab_filltree2|   1|   5000000|       1|0.06803141|  PASSED  
+Preparing to run test 209.  ntuple = 0
+        dab_monobit2|  12|  65000000|       1|0.78143543|  PASSED  
+
+# ── Weak re-run round 1: rgb_lagged_sum (ntup=3) with -p 200 ──
+Selecting previously unselected package libgslcblas0:arm64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4932 files and directories currently installed.)
+Preparing to unpack .../libgslcblas0_2.8+dfsg-5_arm64.deb ...
+Unpacking libgslcblas0:arm64 (2.8+dfsg-5) ...
+Selecting previously unselected package libgsl28:arm64.
+Preparing to unpack .../libgsl28_2.8+dfsg-5_arm64.deb ...
+Unpacking libgsl28:arm64 (2.8+dfsg-5) ...
+Selecting previously unselected package libdieharder3t64.
+Preparing to unpack .../libdieharder3t64_3.31.1.4-1.1+b1_arm64.deb ...
+Unpacking libdieharder3t64 (3.31.1.4-1.1+b1) ...
+Selecting previously unselected package dieharder.
+Preparing to unpack .../dieharder_3.31.1.4-1.1+b1_arm64.deb ...
+Unpacking dieharder (3.31.1.4-1.1+b1) ...
+Setting up libgslcblas0:arm64 (2.8+dfsg-5) ...
+Setting up libgsl28:arm64 (2.8+dfsg-5) ...
+Setting up libdieharder3t64 (3.31.1.4-1.1+b1) ...
+Setting up dieharder (3.31.1.4-1.1+b1) ...
+Processing triggers for libc-bin (2.41-12) ...
+#=============================================================================#
+#            dieharder version 3.31.1 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |rands/second|   Seed   |
+stdin_input_raw|  8.96e+07  | 624441110|
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+      rgb_lagged_sum|   3|   1000000|     200|0.35797660|  PASSED  
+
+# ── Weak re-run round 1: rgb_lagged_sum (ntup=12) with -p 200 ──
+Selecting previously unselected package libgslcblas0:arm64.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4932 files and directories currently installed.)
+Preparing to unpack .../libgslcblas0_2.8+dfsg-5_arm64.deb ...
+Unpacking libgslcblas0:arm64 (2.8+dfsg-5) ...
+Selecting previously unselected package libgsl28:arm64.
+Preparing to unpack .../libgsl28_2.8+dfsg-5_arm64.deb ...
+Unpacking libgsl28:arm64 (2.8+dfsg-5) ...
+Selecting previously unselected package libdieharder3t64.
+Preparing to unpack .../libdieharder3t64_3.31.1.4-1.1+b1_arm64.deb ...
+Unpacking libdieharder3t64 (3.31.1.4-1.1+b1) ...
+Selecting previously unselected package dieharder.
+Preparing to unpack .../dieharder_3.31.1.4-1.1+b1_arm64.deb ...
+Unpacking dieharder (3.31.1.4-1.1+b1) ...
+Setting up libgslcblas0:arm64 (2.8+dfsg-5) ...
+Setting up libgsl28:arm64 (2.8+dfsg-5) ...
+Setting up libdieharder3t64 (3.31.1.4-1.1+b1) ...
+Setting up dieharder (3.31.1.4-1.1+b1) ...
+Processing triggers for libc-bin (2.41-12) ...
+#=============================================================================#
+#            dieharder version 3.31.1 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |rands/second|   Seed   |
+stdin_input_raw|  8.82e+07  |3736270244|
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+      rgb_lagged_sum|  12|   1000000|     200|0.26531567|  PASSED  
+
+# ══ Weak Re-run Summary ══
+# Rounds completed: 1
+# Remaining WEAK: 0
+# FAILED: 0
+# All tests PASSED ✓

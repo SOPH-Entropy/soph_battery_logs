@@ -1,11 +1,11 @@
 {
   "version": "V3",
   "generator": "soph_v3",
-  "last_updated": "2026-03-23T02:21:32.894231+00:00",
+  "last_updated": "2026-03-23T02:53:39.609929+00:00",
   "totals": {
-    "total_runs": 57,
-    "total_tests": 7830,
-    "pass": 7826,
+    "total_runs": 58,
+    "total_tests": 7944,
+    "pass": 7940,
     "suspect": 4,
     "fail": 0,
     "pct_clean": 99.9
@@ -23,13 +23,13 @@
       "runs_fail": 0
     },
     "dieharder": {
-      "total_runs": 2,
-      "total_tests": 228,
-      "pass": 228,
+      "total_runs": 3,
+      "total_tests": 342,
+      "pass": 342,
       "suspect": 0,
       "fail": 0,
       "pct_clean": 100.0,
-      "runs_pass": 2,
+      "runs_pass": 3,
       "runs_warn": 0,
       "runs_fail": 0
     },
