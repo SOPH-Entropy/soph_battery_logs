@@ -1,0 +1,55 @@
+# SOPH Battery Test Log
+# Suite:     practrand stdin64
+# Seed:      aaaaaaaaaaaaaaaa
+# Generator: $HOME/Desktop/SOPH_ALGO/bin/soph_v3 --gen --seed-hex aaaaaaaaaaaaaaaa --bytes 0
+# Date:      2026-03-23 08:09:03
+#======================================================================
+
+RNG_test using PractRand version 0.95
+RNG = RNG_stdin64, seed = unknown
+test set = core, folding = standard (64 bit)
+
+rng=RNG_stdin64, seed=unknown
+length= 1 gigabyte (2^30 bytes), time= 3.9 seconds
+  no anomalies in 246 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 2 gigabytes (2^31 bytes), time= 7.9 seconds
+  no anomalies in 263 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 4 gigabytes (2^32 bytes), time= 15.7 seconds
+  no anomalies in 279 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 8 gigabytes (2^33 bytes), time= 31.6 seconds
+  no anomalies in 295 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 16 gigabytes (2^34 bytes), time= 62.8 seconds
+  no anomalies in 311 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 32 gigabytes (2^35 bytes), time= 124 seconds
+  no anomalies in 325 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 64 gigabytes (2^36 bytes), time= 1252 seconds
+  no anomalies in 340 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 128 gigabytes (2^37 bytes), time= 1502 seconds
+  no anomalies in 355 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 256 gigabytes (2^38 bytes), time= 3469 seconds
+  no anomalies in 369 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 512 gigabytes (2^39 bytes), time= 5021 seconds
+  no anomalies in 383 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 1 terabyte (2^40 bytes), time= 7032 seconds
+  no anomalies in 397 test result(s)
+
