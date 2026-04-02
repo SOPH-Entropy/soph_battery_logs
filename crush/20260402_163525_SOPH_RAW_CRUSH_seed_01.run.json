@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "suite": "crush",
+  "timestamp_utc": "2026-04-02T08:45:20.519658+00:00",
+  "artifact": {
+    "file": "usedLogs/20260402_163525_SOPH_RAW_CRUSH_seed_01.log",
+    "sha256": "627866b0f74d25bf16f1e63b18be19794b17376a6d30ab011bc52766a27ba276",
+    "size_bytes": 79686
+  },
+  "generator": {
+    "name": "generator",
+    "variant": "raw",
+    "command": "$HOME/Desktop/SOPH_ALGO/bin/soph_rng_lane --ctr-raw-gen --seed-hex 01 --bytes 0",
+    "binary": "$HOME/Desktop/SOPH_ALGO/bin/soph_rng_lane",
+    "binary_sha256": "31e7bbad98011888a23cf678614fea46087fadb5bb106dedd3efbb299b63981e",
+    "seed_hex": null
+  },
+  "battery": {
+    "suite": "crush",
+    "command": "$PUBLISH_ROOT/bin/testu01_stdin_bridge crush generator",
+    "tool": "bin/testu01_stdin_bridge",
+    "tool_sha256": "5b6256e7effaac66f796a2585f14046ae85962b1f8f0bf3e56c19eebb2dd5961",
+    "testu01_root": "$LEGACY_SOPH_C/TestU01-1.2.3",
+    "mode": "native"
+  },
+  "runner": {
+    "file": "run_battery.py",
+    "sha256": "1374aa2cd67ac4896af4ea65f3663370e1cb796af55a369e85bb95c6fe9ac746"
+  },
+  "source_commit": null,
+  "result": {
+    "verdict": "PASS",
+    "total_tests": 144,
+    "pass": 144,
+    "suspect": 0,
+    "fail": 0,
+    "pct_clean": 100.0
+  },
+  "signature": {
+    "scheme": "openssl-dgst-sha256",
+    "public_key": "keys/signing-pub.pem",
+    "signature_file": "records/20260402_163525_SOPH_RAW_CRUSH_seed_01.run.json.sig"
+  }
+}
