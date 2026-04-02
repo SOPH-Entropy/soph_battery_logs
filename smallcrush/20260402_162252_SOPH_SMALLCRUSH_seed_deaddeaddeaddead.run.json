@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "suite": "smallcrush",
+  "timestamp_utc": "2026-04-02T08:22:55.312124+00:00",
+  "artifact": {
+    "file": "usedLogs/20260402_162252_SOPH_SMALLCRUSH_seed_deaddeaddeaddead.log",
+    "sha256": "8a05935382b8c9cb9b99c6d02e0c56487da656d15b9a0a199d9f66709059d0d8",
+    "size_bytes": 8453
+  },
+  "generator": {
+    "name": "generator",
+    "variant": "ctr",
+    "command": "$HOME/Desktop/SOPH_ALGO/bin/soph_rng_lane --ctr-gen --seed-hex deaddeaddeaddead --bytes 0",
+    "binary": "$HOME/Desktop/SOPH_ALGO/bin/soph_rng_lane",
+    "binary_sha256": "31e7bbad98011888a23cf678614fea46087fadb5bb106dedd3efbb299b63981e",
+    "seed_hex": null
+  },
+  "battery": {
+    "suite": "smallcrush",
+    "command": "$PUBLISH_ROOT/bin/testu01_stdin_bridge smallcrush generator",
+    "tool": "bin/testu01_stdin_bridge",
+    "tool_sha256": "5b6256e7effaac66f796a2585f14046ae85962b1f8f0bf3e56c19eebb2dd5961",
+    "testu01_root": "$LEGACY_SOPH_C/TestU01-1.2.3",
+    "mode": "native"
+  },
+  "runner": {
+    "file": "run_battery.py",
+    "sha256": "1374aa2cd67ac4896af4ea65f3663370e1cb796af55a369e85bb95c6fe9ac746"
+  },
+  "source_commit": null,
+  "result": {
+    "verdict": "PASS",
+    "total_tests": 15,
+    "pass": 15,
+    "suspect": 0,
+    "fail": 0,
+    "pct_clean": 100.0
+  },
+  "signature": {
+    "scheme": "openssl-dgst-sha256",
+    "public_key": "keys/signing-pub.pem",
+    "signature_file": "records/20260402_162252_SOPH_SMALLCRUSH_seed_deaddeaddeaddead.run.json.sig"
+  }
+}
