@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-02T08:22:55.341852+00:00",
+  "last_updated": "2026-04-02T08:23:01.187987+00:00",
   "batteries": {
     "practrand": {
       "total_runs": 0,
@@ -38,13 +38,13 @@
       "runs": []
     },
     "smallcrush": {
-      "total_runs": 23,
-      "total_tests": 345,
-      "pass": 345,
+      "total_runs": 24,
+      "total_tests": 360,
+      "pass": 360,
       "suspect": 0,
       "fail": 0,
       "pct_clean": 100.0,
-      "runs_pass": 23,
+      "runs_pass": 24,
       "runs_warn": 0,
       "runs_fail": 0,
       "runs": [
@@ -346,6 +346,19 @@
           "pct_clean": 100.0,
           "tlmax": null,
           "reruns": null
+        },
+        {
+          "file": "20260402_162258_SOPH_SMALLCRUSH_seed_0123456789abcdef.run.json",
+          "date": "2026-04-02T08:23:01.157240+00:00",
+          "seed": "0123456789abcdef",
+          "verdict": "PASS",
+          "total_tests": 15,
+          "pass": 15,
+          "suspect": 0,
+          "fail": 0,
+          "pct_clean": 100.0,
+          "tlmax": null,
+          "reruns": null
         }
       ]
     },
@@ -375,9 +388,9 @@
     }
   },
   "totals": {
-    "total_runs": 23,
-    "total_tests": 345,
-    "pass": 345,
+    "total_runs": 24,
+    "total_tests": 360,
+    "pass": 360,
     "suspect": 0,
     "fail": 0,
     "pct_clean": 100.0
