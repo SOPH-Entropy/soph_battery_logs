@@ -1,0 +1,29 @@
+{
+  "last_updated": null,
+  "batteries": {
+    "practrand": {
+      "total_runs": 0, "total_tests": 0, "pass": 0, "suspect": 0, "fail": 0,
+      "pct_clean": 0, "runs_pass": 0, "runs_warn": 0, "runs_fail": 0, "runs": []
+    },
+    "dieharder": {
+      "total_runs": 0, "total_tests": 0, "pass": 0, "suspect": 0, "fail": 0,
+      "pct_clean": 0, "runs_pass": 0, "runs_warn": 0, "runs_fail": 0, "runs": []
+    },
+    "nist": {
+      "total_runs": 0, "total_tests": 0, "pass": 0, "suspect": 0, "fail": 0,
+      "pct_clean": 0, "runs_pass": 0, "runs_warn": 0, "runs_fail": 0, "runs": []
+    },
+    "smallcrush": {
+      "total_runs": 0, "total_tests": 0, "pass": 0, "suspect": 0, "fail": 0,
+      "pct_clean": 0, "runs_pass": 0, "runs_warn": 0, "runs_fail": 0, "runs": []
+    },
+    "crush": {
+      "total_runs": 0, "total_tests": 0, "pass": 0, "suspect": 0, "fail": 0,
+      "pct_clean": 0, "runs_pass": 0, "runs_warn": 0, "runs_fail": 0, "runs": []
+    },
+    "bigcrush": {
+      "total_runs": 0, "total_tests": 0, "pass": 0, "suspect": 0, "fail": 0,
+      "pct_clean": 0, "runs_pass": 0, "runs_warn": 0, "runs_fail": 0, "runs": []
+    }
+  }
+}
